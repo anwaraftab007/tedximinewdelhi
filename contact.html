@@ -118,6 +118,26 @@
 </head>
 
 <body>
+  <div id="loader" class="relative flex justify-center items-center fixed inset-0 bg-white z-50">
+    <div class="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-red-600"></div>
+    <img src="https://cdn.prod.website-files.com/63e118320fe0876684cc169c/63e574dcd33e9c48b73529fb_TEDxMiami_Webclip.png"  
+         class="rounded-full h-28 w-28">
+  </div>
+<style>
+  #loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+}
+
+</style>  
   <div class="c-page-wrapper">
     <div class="v-global-styles w-embed">
       <style>
@@ -342,8 +362,8 @@
                                     </div>
                                     <div class="ml-4 mb-4">
                                         <h3 class="mb-2 text-lg font-medium lea dark:text-white">Instagram</h3>
-                                        <a href="https://www.instagram.com/tedximinewdelhi?igsh=MXRhYzFkaHh4cWZqcw=="></a>
-                                        <p class="text-gray-300">TEDxIMINewDelhi (@tedximinewdelhi)</p>
+                                        <a href="https://www.instagram.com/tedximinewdelhi?igsh=MXRhYzFkaHh4cWZqcw==">
+                                        <p class="text-gray-300">TEDxIMINewDelhi (@tedximinewdelhi)</p></a>
                                     </div>
                                 </li>
                             </ul>
@@ -522,6 +542,19 @@ M0 356.759V2126H1577V218.07C1514.33 161.85 1445.22 112.053 1369.5 72.4841C993.38
       }
     });
   </script>
+  
+<script>
+  $(document).ready(function () {
+    // Wait for the entire page to load
+    $(window).on("load", function () {
+      // Fade out the loader
+      $("#loader").fadeOut("slow", function () {
+        // Remove the loader from DOM after fade out
+        $(this).remove();
+      });
+    });
+  });
+</script>
 </body>
 
 </html>
