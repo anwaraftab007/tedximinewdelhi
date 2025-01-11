@@ -268,115 +268,151 @@
       </div>
     </div>
     <main data-w-id="60e585bc-724d-29c3-ad72-d8eb3b05a97d" class="c-main">
-        <section id="contact">
-            <div class="mx-auto max-w-7xl px-4">
-            <!-- component -->
-            <div class="flex items-center justify-center md:p-12 max-sm:mt-[4.2rem]">
-                <div class="mx-auto w-full max-w-[550px] bg-[#262223] p-4 md:p-8 rounded">
-                  <form action="https://formbold.com/s/FORM_ID" method="POST">
-                    <h1 class="text-2xl md:text-4xl text-center mb-6 md:mb-8 font-bold text-white">Book a Ticket</h1>
-                   
-        <div class="mb-5">
-          <label
-            for="name"
-            class="mb-3 block text-sm md:text-base font-medium text-white"
-          >
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            class="w-full rounded-md border border-[#e0e0e0] bg-[#262223] py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-white focus:shadow-md"
-          />
-        </div>
-  
-        <!-- Roll No -->
-        <div class="mb-5">
-          <label
-            for="rollNo"
-            class="mb-3 block text-sm md:text-base font-medium text-white"
-          >
-            Roll No.
-          </label>
-          <input
-            type="text"
-            name="rollNo"
-            id="rollNo"
-            placeholder="Enter your roll number"
-            class="w-full rounded-md border border-[#e0e0e0] bg-[#262223] py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-white focus:shadow-md"
-          />
-        </div>
-  
-        <!-- Email -->
-        <div class="mb-5">
-          <label
-            for="email"
-            class="mb-3 block text-sm md:text-base font-medium text-white"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            class="w-full rounded-md border border-[#e0e0e0] bg-[#262223] py-3 px-6 text-sm md:text-base font-medium text-[#6B7280] outline-none focus:border-white focus:shadow-md"
-          />
-        </div>
-  
-        <!-- Payment Link -->
-        <div class="mb-5">
-          <label
-            for="payment"
-            class="mb-3 block text-sm md:text-base font-medium text-white"
-          >
-            Payment Link
-          </label>
-          <a
-            href="https://payment-gateway-link.com"
-            target="_blank"
-            class="text-blue-500 underline"
-          >
-            Click here to make the payment
-          </a>
-        </div>
-  
-        <!-- Screenshot Upload -->
-        <div class="mb-5">
-          <label
-            for="screenshot"
-            class="mb-3 block text-sm md:text-base font-medium text-white"
-          >
-            Upload Payment Screenshot
-          </label>
-    <label for="file-input" class="sr-only">Choose file</label>
-    <input type="file" name="file-input" id="file-input" class="block w-full border border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400
-      file:bg-gray-50 file:border-0
-      file:me-4
-      file:py-3 file:px-4
-      dark:file:bg-neutral-700 dark:file:text-neutral-400">
-  <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">JPEG, PNG, JPG.</p>
-  
-        </div>
-  
-        <!-- Submit Button -->
-        <div>
-          <button
-            type="submit"
-            class="hover:shadow-form rounded-md bg-red-600 py-3 px-8 text-center text-sm md:text-base font-semibold text-white outline-none"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-      
+        <section id="contact ">
+          <div class="min-h-screen flex justify-center items-center
+          ">
+          <div class="md:flex max-sm:p-4 max-md:p-8 max-md:w-full rounded-lg">
+            <div
+              class="relative overflow-hidden md:flex w-1/2  bg-gradient-to-tr from-[#191617] to-red-800  justify-around items-center hidden">
+              <div>
+                <h1 class="text-white font-bold text-4xl font-sans">TEDxIMI New Delhi</h1>
+                <!-- <p class="text-white mt-1">TED is a
+                  nonprofit organization <br>
+                        devoted to ideas
+                              worth spreading</p> -->
+              </div>
+              <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+              <div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+              <div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+              <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
             </div>
+            <div class="flex w-full md:w-1/2 justify-center py-10 items-center p-4 md:p-8  bg-[#262223]">
+              <div class="form-container">
+                <form id="submissionForm">
+                  <h1 class="text-2xl md:text-4xl text-center mb-6 md:mb-8 font-bold text-white">Submit Your Details</h1>
+              
+                  <!-- Name -->
+                   <div class="flex flex-col md:flex-row">
+                    <div class="mb-5">
+                    <label for="name" class="mb-3 block text-sm md:text-base font-medium text-white">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required class="w-full rounded-md border bg-[#262223] py-3 px-6 text-sm font-medium text-[#6B7280] outline-none focus:border-white">
+                  </div>
+              
+                  <!-- Roll No -->
+                  <div class="ml-2 mb-5">
+                    <label for="rollNo" class="mb-3 block text-sm md:text-base font-medium text-white">Roll No.</label>
+                    <input type="text" name="rollNo" id="rollNo" placeholder="Enter your roll number" required class="w-full rounded-md border bg-[#262223] py-3 px-6 text-sm font-medium text-[#6B7280] outline-none focus:border-white">
+                  </div>
+                   </div>
+                  
+              
+                  <!-- Email -->
+                  <div class="mb-5">
+                    <label for="email" class="mb-3 block text-sm md:text-base font-medium text-white">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required class="w-full rounded-md border bg-[#262223] py-3 px-6 text-sm font-medium text-[#6B7280] outline-none focus:border-white">
+                  </div>
+
+                  <div class="mb-5">
+                    <label for="payment" class="mb-3 block text-sm md:text-base font-medium text-white">
+                      Payment Link
+                    </label>
+                    <a href="https://payment-gateway-link.com" target="_blank" class="text-blue-500 underline">
+                      Click here to make the payment
+                    </a>
+                  </div>
+              
+                  <!-- Screenshot Upload -->
+                  <div class="mb-5">
+                    <label for="screenshot" class="mb-3 block text-sm md:text-base font-medium text-white">Upload Payment Screenshot</label>
+                    <input type="file" name="screenshot" id="screenshot" required class="block w-full border border-gray-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400
+                    file:bg-gray-50 file:border-0
+                    file:me-4
+                    file:py-3 file:px-4
+                    dark:file:bg-neutral-700 dark:file:text-neutral-400">
+                  </div>
+              
+                  <!-- Submit Button -->
+                  <button type="submit" class="hover:shadow-form rounded-md bg-red-600 py-3 px-8 text-center text-sm font-semibold text-white outline-none">Submit</button>
+                  <p id="responseMessage" class="mt-4 text-sm font-medium"></p>
+                </form>
+              </div>
+              
+              <script>
+                document.getElementById('submissionForm').addEventListener('submit', async (event) => {
+                  event.preventDefault(); // Prevent the form from redirecting
+                  const form = event.target;
+                  const formData = new FormData(form);
+                  const messageElement = document.getElementById('responseMessage');
+                  messageElement.textContent = 'Submitting Data...';
+                  messageElement.style.color = '#add8e6';
+                  try {
+                    const response = await fetch('https://tedximi-server.onrender.com/submit', {
+                      method: 'POST',
+                      body: formData,
+                    });
+              
+                    const result = await response.json();
+                    
+              
+                    if (response.ok) {
+                      messageElement.textContent = 'Submission successful!';
+                      messageElement.style.color = 'green';
+                    } else {
+                      messageElement.textContent = result.error || 'Something went wrong.';
+                      messageElement.style.color = 'red';
+                    }
+                  } catch (error) {
+                    console.error('Error:', error);
+                    document.getElementById('responseMessage').textContent = 'An error occurred while submitting the form.';
+                    document.getElementById('responseMessage').style.color = 'red';
+                  }
+                });
+              </script>
+              
+            </div>
+          </div></div>
         </section>
-        
+        <!-- <script>
+          document.getElementById('submissionForm').addEventListener('submit', async function(event) {
+              event.preventDefault();  // Prevent form from reloading the page
+      
+              // Get the form data
+              const formData = new FormData(this);
+              const formObject = {};
+      
+              formData.forEach((value, key) => {
+                  formObject[key] = value;
+              });
+              console.log(JSON.stringify(formObject));
+      
+              try {
+                  // Send the form data to the server using fetch
+                  const response = await fetch('https://tedximi-server.onrender.com/submit', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(formObject),
+                  });
+      
+                  const result = await response.json();
+      
+                  // Check if the response contains a success message
+                  if (response.ok) {
+                      document.getElementById('responseMessage').innerText = result.message || 'Form submitted successfully!';
+                      document.getElementById('responseMessage').style.color = 'green';
+                  } else {
+                      document.getElementById('responseMessage').innerText = result.message || 'Something went wrong. Please try again.';
+                      document.getElementById('responseMessage').style.color = 'red';
+                  }
+              } catch (error) {
+                  // Handle errors if the fetch fails
+                  document.getElementById('responseMessage').innerText = 'Error submitting form. Please check your connection and try again.';
+                  document.getElementById('responseMessage').style.color = 'red';
+              }
+          });
+      </script>
+         -->
       <footer class="c-footer">
         <div class="c-footer-animation w-embed"><svg width="100%" viewBox="0 0 1577 4307" fill="none"
             xmlns="http://www.w3.org/2000/svg">
