@@ -363,7 +363,7 @@
                     }
                   } catch (error) {
                     console.error('Error:', error);
-                    document.getElementById('responseMessage').textContent = 'An error occurred while submitting the form.';
+                    document.getElementById('responseMessage').textContent = error;
                     document.getElementById('responseMessage').style.color = 'red';
                   }
                 });
